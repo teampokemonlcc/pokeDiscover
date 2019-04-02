@@ -1,0 +1,133 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "nav-top" "content" "footer";
+    grid-template-rows: 60px auto 40px;
+    height: calc(100% - 20px);
+}
+
+.nav-top {
+    grid-area: nav-top;
+    margin: 0px;
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.nav-top i {
+    display: inline;
+}
+
+.nav-top div {
+    float: right;
+    display: inline;
+    font-family: 'Oswald', 'Futura', sans-serif;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    grid-area: content;
+    width: 100%;
+    margin: 0px;
+    background-color: white;
+    font-family: 'Helvetica Neue', 'HelveticaNeue', sans-serif;
+
+    display: grid;
+    grid-template-areas: "nav-main nav-main" "sidebar content-main";
+    grid-template-columns: 250px auto;
+    grid-template-rows: 40px auto;
+}
+
+.nav-main {
+    grid-area: nav-main;
+}
+
+.nav-main-bar {
+    list-style-type: none;
+    padding-right: 10px;
+    margin-top: 0px;
+    text-align: right;
+    font-family: 'Oswald', 'Futura', sans-serif;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.nav-main-bar li {
+    display: inline-block;
+}
+
+.nav-main-bar li a {
+    text-decoration: none;
+    padding: .25em;
+    text-align: center;
+    color: black;
+}
+
+.nav-main-bar li a:focus {
+    background-color: lightgrey;
+    color: darkgray;
+}
+
+.nav-main-bar li a:hover {
+    background-color: lightgrey;
+    color: darkgray;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding: 1em;
+    text-align: center;
+    overflow: hidden;
+    border-right: 1px solid darkgrey;
+}
+
+.content-main {
+    grid-area: content-main;
+    padding: 1rem;
+}
+
+.footer {
+    grid-area: footer;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.center-image {
+    display: block;
+    margin: 50px auto 50px auto;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 10px;
+    font-variant: small-caps;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px;
+    font-variant: small-caps;
+}
+
+h3 {
+    font-size: 17px;
+    margin: 10px;
+    font-variant: small-caps;
+}
