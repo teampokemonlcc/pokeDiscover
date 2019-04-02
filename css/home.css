@@ -1,0 +1,19 @@
+.content {
+    grid-area: content;
+    width: 100%;
+    margin: 0px;
+    background-color: white;
+    font-family: 'Helvetica Neue', 'HelveticaNeue', sans-serif;
+
+    display: grid;
+    grid-template-areas: "nav-main" "content-main";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto;
+}
+
+#home-title {
+    font-size: 30px;
+    margin: 10px;
+    font-variant: small-caps;
+    text-align: center;
+}
