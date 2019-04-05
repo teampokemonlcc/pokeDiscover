@@ -22,17 +22,12 @@ body {
     grid-area: header;
     width: 100%;
     overflow: hidden;
-}
-
-.header .menu-icon {
-    float: left;
-    margin: 10px;
+    font-size: 30px;
+    font-family: 'Oswald', 'Futura', sans-serif;
 }
 
 .header .header-title {
     float: right;
-    font-family: 'Oswald', 'Futura', sans-serif;
-    font-size: 35px;
 }
 
 .content {
@@ -48,42 +43,55 @@ body {
     grid-template-rows: 40px auto;
 }
 
-.nav-main {
-    grid-area: nav-main;
+/* -------- NAVIGATION-------------- */
+
+.nav-action {
+    position: absolute;
+    margin-left: 5px;
+    width: 250px;
+    height: 45px;
+    cursor: pointer;
 }
 
-.nav-main-bar {
-    list-style-type: none;
-    padding-right: 10px;
-    margin-top: 0px;
-    text-align: right;
+.sidenav {
     font-family: 'Oswald', 'Futura', sans-serif;
-    letter-spacing: 2px;
-    font-variant: small-caps;
-    font-weight: bolder;
-    font-size: 18px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: slategray;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
 
-.nav-main-bar li {
-    display: inline-block;
-}
-
-.nav-main-bar li a {
+.sidenav a {
+    padding: 4px 8px 4px 45px;
     text-decoration: none;
-    padding: .25em;
-    text-align: center;
-    color: black;
+    font-size: 25px;
+    color: darkslategray;
+    display: block;
+    transition: 0.3s;
 }
 
-.nav-main-bar li a:focus {
-    background-color: lightgrey;
-    color: darkgray;
+.sidenav a:hover {
+    color: #f1f1f1;
+    background-color: cadetblue;
 }
 
-.nav-main-bar li a:hover {
-    background-color: lightgrey;
-    color: darkgray;
+.sidenav .nav-action {
+    padding: 3px 8px 0 8px;
+    font-size: 30px;
+    top: 5px;
 }
+
+.sidenav .nav-action:hover {
+    background-color: slategray;
+}
+
+/* -------- SIDEBAR -------------- */
 
 .sidebar {
     grid-area: sidebar;
@@ -127,4 +135,14 @@ h3 {
     font-size: 17px;
     margin: 10px;
     font-variant: small-caps;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
