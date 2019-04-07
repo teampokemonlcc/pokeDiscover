@@ -1,0 +1,23 @@
+{"pokeball": [
+    {
+        "name": "Poké Ball",
+        "description": "A ball thrown at wild Pokémon to catch them.",
+        "image": "img/pokeball.jpg"
+    },
+    {
+        "name": "Great Ball",
+        "description": "A ball for catching wild Pokémon. More effective than a Poké Ball.",
+        "image": "img/greatball.jpg"
+    },
+    {
+        "name": "Ultra Ball",
+        "description": "A ball for catching wild Pokémon. More effective than a Great Ball.",
+        "image": "img/ultraball.jpg"
+    },
+    {
+        "name": "Master Ball",
+        "description": "A ball that captures any wild Pokémon without fail.",
+        "image": "img/masterball.jpg"
+    }
+]
+}
