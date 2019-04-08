@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <title>Moonmist</title>
-    <link rel="stylesheet" href="css/wireframe.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
 
@@ -14,23 +13,26 @@
         <span class="header-title">Team Moonmist Pokémon Center</span>
     </section>
 
-    <section class="content">
+    <!-- This is the content section. it's the main body of the page. You can disable the sidebar if you don't want to see it by adding id="hide-sidebar" to the section's attributes. -->
+    <section class="content" id="hide-sidebar">
+        <section class="sidebar"></section>
         <section class="content-main">
             <img class="center-image" src="img/pokeball.png">
             <h1 id="home-title">Welcome to the Poké-Revolution</h1>
         </section>
     </section>
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776; Menu</a>
-        <a href="wireframe-home.html">Home</a>
-        <a href="wireframe.html">Pokémon</a>
+        <a href="javascript:void(0)" class="nav-action" onclick="closeNav()">&#9776; Menu</a>
+        <a href="index.html">Home</a>
+        <a href="#">Pokémon</a>
         <a href="#">Game</a>
         <a href="#">About Us</a>
+        <a href="template.html">Template</a>
         <p>&nbsp;</p>
     </div>
     <section class="footer">
         <div>Site designed by Team Moonmist - CITW165 2019 <sup>&copy;</sup></div>
     </section>
      <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/wireframe.js"></script>
+    <script src="js/home.js"></script>
 </body>

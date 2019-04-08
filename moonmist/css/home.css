@@ -1,3 +1,42 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header" "content" "footer";
+    grid-template-rows: 60px auto 40px;
+    height: calc(100% - 20px);
+}
+
+.header {
+    grid-area: header;
+    width: 100%;
+    overflow: hidden;
+    font-size: 30px;
+    font-family: 'Oswald', 'Futura', sans-serif;
+}
+
+.header .header-title {
+    float: right;
+}
+
+#home-title {
+    font-size: 30px;
+    margin: 10px;
+    font-variant: small-caps;
+    text-align: center;
+}
+
 .content {
     grid-area: content;
     width: 100%;
@@ -6,14 +45,120 @@
     font-family: 'Helvetica Neue', 'HelveticaNeue', sans-serif;
 
     display: grid;
-    grid-template-areas: "nav-main" "content-main";
-    grid-template-columns: auto;
-    grid-template-rows: 50px auto;
+    grid-template-areas: "nav-main nav-main" "sidebar content-main";
+    grid-template-columns: 250px auto;
+    grid-template-rows: 40px auto;
 }
 
-#home-title {
+/* -------- NAVIGATION-------------- */
+
+.nav-action {
+    position: absolute;
+    margin-left: 5px;
+    width: 250px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.sidenav {
+    font-family: 'Oswald', 'Futura', sans-serif;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: slategray;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 4px 8px 4px 45px;
+    text-decoration: none;
+    font-size: 25px;
+    color: darkslategray;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+    background-color: cadetblue;
+}
+
+.sidenav .nav-action {
+    padding: 3px 8px 0 8px;
+    font-size: 30px;
+    top: 5px;
+}
+
+.sidenav .nav-action:hover {
+    background-color: slategray;
+}
+
+/* -------- SIDEBAR -------------- */
+
+#hide-sidebar {
+    grid-template-columns: 0px auto;
+}
+
+#hide-sidebar .sidebar {
+    border-right: 0;
+    padding: 0;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding: 1em;
+    text-align: center;
+    overflow: hidden;
+    border-right: 1px solid darkgrey;
+}
+
+.content-main {
+    grid-area: content-main;
+    padding: 1rem;
+}
+
+.footer {
+    grid-area: footer;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 11px;
+}
+
+.center-image {
+    display: block;
+    margin: 50px auto 50px auto;
+}
+
+h1 {
     font-size: 30px;
     margin: 10px;
     font-variant: small-caps;
-    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px;
+    font-variant: small-caps;
+}
+
+h3 {
+    font-size: 17px;
+    margin: 10px;
+    font-variant: small-caps;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
