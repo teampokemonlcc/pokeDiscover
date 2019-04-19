@@ -5,8 +5,5 @@ $('[data-fancybox="gallery"]').fancybox({
     'zoom',
     'fullScreen',
     'close'
-  ],
-  thumbs : {
-    autoStart : true
-  }
+  ],loop: true
 });
