@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Moonmist</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+
+<body>
+    <section class="header">
+        <span class="nav-action" onclick="openNav()">&#9776; Menu</span>
+        <span class="header-title">Team Moonmist Pokémon Center</span>
+
+    </section>
+    <section class="content" id="hide-sidebar">
+        <section class="sidebar">
+        </section>
+        <section class="content-main">
+            <div id="gameContainer">
+                <h1>Name that Pokemon!</h1>
+                <div id="gameDisplay">
+                    <img id="gameImage" src="" alt="Pokemon Image" style="max-height: 250px"/>
+                </div>
+                <div id="gameForm">
+                    <input type="text" id="gameAnswer" name="gameAnswer" width=20>
+                    <input type="submit" id="guess" onClick="guess()" value="Guess">
+                    <input type="submit" id="reset" onClick="reset()" value="New">
+                </div>
+            </div>
+            <h1 id="gameName"></h1>
+            <p id="gameInfo"></p>
+        </section>
+    </section>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="nav-action" onclick="closeNav()">&#9776; Menu</a>
+        <a href="index.html">Home</a>
+        <a href="photoviewer.html">Gallery</a>
+        <a href="game.html">Game</a>
+        <a href="pokedex.html">Pokédex</a>
+        <a href="template.html">Template</a>
+    </div>
+    <section class="footer">
+        <div>Site designed by Team Moonmist - CITW165 2019 <sup>&copy;</sup></div>
+    </section>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/home.js"></script>
+</body>

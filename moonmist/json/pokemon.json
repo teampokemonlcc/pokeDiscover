@@ -3,36 +3,36 @@
         "name": "Bulbasaur",
         "number": 1,
         "description": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
-        "image": "img/bulbasaur.jpg",
-        "silhouette": "img/sil/bulbasaur.jpg"
+        "image": "img/bulbasaur.png",
+        "silhouette": "img/sil/bulbasaur.png"
     },
     {
         "name": "Charmander",
         "number": 4,
         "description": "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.",
-        "image": "img/charmander.jpg",
-        "silhouette": "img/sil/charmander.jpg"
+        "image": "img/charmander.png",
+        "silhouette": "img/sil/charmander.png"
     },
     {
         "name": "Squirtle",
         "number": 7,
         "description": "Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds.",
-        "image": "img/squirtle.jpg",
-        "silhouette": "img/sil/squirtle.jpg"
+        "image": "img/squirtle.png",
+        "silhouette": "img/sil/squirtle.png"
     },
     {
         "name": "Pikachu",
         "number": 25,
         "description": "Whenever Pikachu comes across something new, it blasts it with a jolt of electricity. If you come across a blackened berry, it's evidence that this Pokémon mistook the intensity of its charge.",
-        "image": "img/pikachu.jpg",
-        "silhouette": "img/sil/pikachu.jpg"
+        "image": "img/pikachu.png",
+        "silhouette": "img/sil/pikachu.png"
     },
     {
         "name": "Jigglypuff",
         "number": 39,
         "description": "Jigglypuff's vocal cords can freely adjust the wavelength of its voice. This Pokémon uses this ability to sing at precisely the right wavelength to make its foes most drowsy.",
-        "image": "img/jigglypuff.jpg",
-        "silhouette": "img/sil/jigglypuff.jpg"
+        "image": "img/jigglypuff.png",
+        "silhouette": "img/sil/jigglypuff.png"
     }
 ]
 }
