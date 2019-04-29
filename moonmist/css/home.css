@@ -16,6 +16,9 @@ body {
     grid-template-areas: "header" "content" "footer";
     grid-template-rows: 60px auto 40px;
     height: calc(100% - 20px);
+    background-color: black;
+    color: aliceblue;
+
 }
 
 .header {
@@ -24,6 +27,8 @@ body {
     overflow: hidden;
     font-size: 30px;
     font-family: 'Oswald', 'Futura', sans-serif;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .header .header-title {
@@ -41,13 +46,19 @@ body {
     grid-area: content;
     width: 100%;
     margin: 0px;
-    background-color: white;
     font-family: 'Helvetica Neue', 'HelveticaNeue', sans-serif;
 
     display: grid;
     grid-template-areas: "nav-main nav-main" "sidebar content-main";
     grid-template-columns: 250px auto;
     grid-template-rows: 40px auto;
+
+    background: url(../img/team_logo_dark_01.png) no-repeat center center fixed;
+    background-color: black;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 }
 
 /* -------- NAVIGATION-------------- */
@@ -68,7 +79,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: slategray;
+    background-color: aliceblue;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -78,14 +89,14 @@ body {
     padding: 4px 8px 4px 45px;
     text-decoration: none;
     font-size: 25px;
-    color: darkslategray;
+    color: #56439a;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
     color: #f1f1f1;
-    background-color: cadetblue;
+    background-color: #56439a;
 }
 
 .sidenav .nav-action {
@@ -95,7 +106,7 @@ body {
 }
 
 .sidenav .nav-action:hover {
-    background-color: slategray;
+    background-color: #56439a;
 }
 
 /* -------- SIDEBAR -------------- */
@@ -133,25 +144,43 @@ body {
 .center-image {
     display: block;
     margin: 50px auto 50px auto;
+    filter: drop-shadow(7px 7px 12px #000);
 }
 
 h1 {
+    text-align: center;
     font-size: 30px;
     margin: 10px;
     font-variant: small-caps;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 h2 {
     font-size: 20px;
     margin: 10px;
     font-variant: small-caps;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 h3 {
     font-size: 17px;
     margin: 10px;
     font-variant: small-caps;
+    text-shadow: 2px 2px 4px #000000;
 }
+
+p {
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 30px;
+
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
 
 @media screen and (max-height: 450px) {
     .sidenav {
