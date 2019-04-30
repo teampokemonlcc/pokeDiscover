@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Moonmist</title>
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+    <section class="header">
+        <span class="nav-action" onclick="openNav()">&#9776; Menu</span>
+        <span class="header-title">Team Moonmist Pokémon Center</span>
+    </section>
+    <!-- This is the content section. it's the main body of the page. You can disable the sidebar if you don't want to see it by adding id="hide-sidebar" to the section's attributes. -->
+    <section class="content" id="hide-sidebar">
+        <section class="sidebar"></section>
+        <section class="content-main">
+            <h1 id="home-title">Click Pokéball to reveal each member! </h1>
+        </section>
+    </section>
+    <section class="member">
+      <img src="images/pokeball2.png" onclick="this.src='images/brian.jpg'">
+      <img src="images/pokeball2.png" onclick="this.src='images/desiera.jpg'">
+      <img src="images/pokeball2.png" onclick="this.src='#'">
+      <img src="images/pokeball2.png" onclick="this.src='#'">
+    </section>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="nav-action" onclick="closeNav()">&#9776; Menu</a>
+        <a href="index.html">Home</a>
+        <a href="photoviewer.html">Gallery</a>
+        <a href="game.html">Game</a>
+        <a href="pokedex.html">Pokédex</a>
+        <a href="about.html">About Us</a>
+        <a href="template.html">Template</a>
+        <p>&nbsp;</p>
+    </div>
+    <section class="footer">
+        <div>Site designed by Team Moonmist - CITW165 2019 <sup>&copy;</sup></div>
+    </section>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/home.js"></script>
+</body>
